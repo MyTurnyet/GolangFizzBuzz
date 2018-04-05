@@ -1,8 +1,8 @@
 package main
 
-func Buzz(numberToConvert int, nextFunction FizzBuzz ) string{
-	if numberToConvert != 5 && numberToConvert != 10 {
-		return nextFunction(numberToConvert, GetString)
+func Buzz(numberToConvert int) string{
+	if numberToConvert % 5 != 0 {
+		return Fizz(numberToConvert)
 	}
 	return "buzz"
 }

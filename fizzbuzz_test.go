@@ -17,16 +17,17 @@ func Test_MultipleOfThreeShouldReturnFizz(t *testing.T) {
 		t.Errorf("GetString return invalid value: %q is not %q", expected, returnVal)
 	}
 }
-func Test_FiveShouldReturnBuzz(t *testing.T) {
+func Test_MultipleOfFiveShouldReturnBuzz(t *testing.T) {
 	returnVal:=CalculateFizzBuzz(5)
 	expected := "buzz"
 	if returnVal != expected {
 		t.Errorf("GetString return invalid value: %q is not %q", expected, returnVal)
 	}
 }
-func Test_TenShouldReturnBuzz(t *testing.T) {
-	returnVal:=CalculateFizzBuzz(10)
-	expected := "buzz"
+
+func Test_MultipleOfFifteenShouldReturnBuzz(t *testing.T) {
+	returnVal := CalculateFizzBuzz(15)
+	expected := "fizzbuzz"
 	if returnVal != expected {
 		t.Errorf("GetString return invalid value: %q is not %q", expected, returnVal)
 	}

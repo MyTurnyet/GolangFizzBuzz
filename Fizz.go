@@ -1,9 +1,9 @@
 package main
 
 
-func Fizz(numberToConvert int, nextCall FizzBuzz) string{
+func Fizz(numberToConvert int) string{
 	if numberToConvert %3 != 0 {
-		return nextCall(numberToConvert,nil)
+		return GetString(numberToConvert)
 	}
 	return "fizz"
 }
