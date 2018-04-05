@@ -1,8 +1,5 @@
 package main
 
-
-type FbFunction func(int)string
-
 func main() {
 }
 func CalculateFizzBuzz(numberToConvert int)string  {
